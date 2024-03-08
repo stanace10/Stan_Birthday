@@ -1,0 +1,385 @@
+/* Reset Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #000000;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  background-color: #000000;
+  color: #fff;
+  padding: 15px;
+  z-index: 1000;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.nav-links {
+  list-style-type: none;
+  text-align: center;
+}
+
+.nav-links li {
+  display: inline;
+  margin-left: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+  transition: color 0.1s ease;
+}
+
+.nav-links li a.active {
+  color: #FFBC60;
+}
+
+/* Header */
+header {
+  padding: 13% 20px; /* Adjusted to accommodate the fixed navbar */
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+
+header h2 {
+  font-size: 22px;
+  color: #FFBC60;
+  margin-bottom: 20px;
+}
+
+/* Detail */
+summary .container {
+  color: #FFBC60;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 20px;
+}
+
+summary .h3 {
+  font-size: 35px;
+  color: #ffffff;
+  text-align: left;
+}
+
+summary .p{
+  font-size: 35px;
+  color: #ffffff;
+  text-align: left;
+}
+/* card */
+sub .card {
+  background-color: #FFBC60;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  overflow: hidden;
+}
+
+.text {
+  padding: 20px;
+}
+
+.text h3 {
+  color: #FFBC60;
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+
+.text p {
+  color: #FFBC60;
+}
+
+.text ol {
+  margin-left: 20px;
+  color: #ffffff;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .card {
+    margin: 10px;
+  }
+}
+
+/*image*/
+
+#image-carousel {
+  padding: 50px 0;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.carousel {
+  width: 200px; /* Adjust width as needed */
+  height: 200px; /* Adjust height as needed */
+  border: 2px solid #000;
+  border-color: red;
+  border-radius: 50%;
+  overflow: hidden;
+  color: #FFBC60;
+  position: relative;
+}
+
+.images {
+ 
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.images .h3{
+  color: #FFBC60;
+}
+.images img {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  transition: opacity 3s ease;
+}
+
+.images img.active {
+  opacity: 1;
+}
+
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .carousel {
+    width: 100px; /* Adjust width for smaller screens */
+    height: 100px; /* Adjust height for smaller screens */
+  }
+}
+
+
+
+/* Sections */
+section {
+  padding: 250px 20px;
+  text-align: center;
+  color: #FFBC60;;
+  font-size: large;
+  
+}
+
+section .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 20px;
+}
+
+section .time-date-box {
+  flex: 1;
+  padding-right: 20px;
+}
+
+section .location-box {
+  flex: 1;
+  padding-left: 20px;
+}
+
+section h2 {
+  font-size: 45px;
+  color: #FFBC60;
+  margin-bottom: 10px;
+}
+
+section p {
+  margin-bottom: 25px;
+  color: #ffffff;
+}
+
+
+article {
+  padding: 90px 10px;
+  text-align: center;
+  color: #FFBC60;
+  font-size: large;
+    
+}
+
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  background-color: #FFBC60;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+
+/* Form */
+form {
+  text-align: left;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  color: #ffffff;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+button[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #ffc107;
+  color: #333;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #ffad33;
+}
+
+
+/* Footer */
+footer {
+  width: 100%;
+  background-color: #000000;
+  text-align: center;
+  color: #FFBC60;
+  font-size: large;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 10px;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: #333;
+    width: 100%;
+    text-align: right;
+  }
+
+  .nav-links.active {
+    display: block;
+  }
+
+  .nav-links li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .navbar .logo,
+  .navbar .nav-links {
+    float: none;
+    text-align: center;
+  }
+
+  .navbar {
+    padding: 10px 0;
+  }
+
+  /* Adjustments for smaller screens */
+  .header {
+    padding: 10% 20px; /* Adjusted padding for smaller screens */
+  }
+
+  summary .container,
+  section .container,
+  article .container,
+  footer .container {
+    padding: 50px 20px; /* Adjusted padding for smaller screens */
+  }
+
+  .card {
+    width: 90%; /* Adjust width for smaller screens */
+    max-width: 300px; /* Set a maximum width for better mobile fit */
+    height: auto; /* Allow the height to adjust based on content */
+    padding: 30px; /* Adjusted padding for smaller screens */
+  }
+
+  .inside {
+    padding: 0 10px; /* Adjusted padding for inside content */
+  }
+
+  .cake {
+    width: 80%; /* Adjusted width for the cake image */
+  }
+
+  .front,
+  .back {
+    padding: 20px; /* Adjusted padding for front and back faces */
+  }
+
+  /* Adjust font size for smaller screens */
+  .inside p,
+  .inside h1 {
+    font-size: 14px;
+  }
+
+
+  section h2,
+  article h2 {
+    font-size: 30px; /* Adjusted font size for smaller screens */
+  }
+
+  section p,
+  article p {
+    font-size: 16px; /* Adjusted font size for smaller screens */
+  }
+
+  form {
+    max-width: 100%; /* Ensure form width is 100% on smaller screens */
+  }
+}
